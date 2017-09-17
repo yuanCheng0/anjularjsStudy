@@ -169,7 +169,7 @@ angular.module('app')
                   resolve: {
                       deps: ['$ocLazyLoad',
                         function( $ocLazyLoad ){
-                          return $ocLazyLoad.load('ngGrid').then(
+                          return $ocLazyLoad.load(['ngGrid','ui.select']).then(
                               function(){
                                   return $ocLazyLoad.load('js/controllers/grid.js');
                               }

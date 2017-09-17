@@ -1,0 +1,22 @@
+<div class="col-sm-6">
+        <form name="form-contact" class="form-validation">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="h4">新增数据</span>
+            </div>
+            <div class="panel-body">
+                <div class="form-group pull-in clearfix">
+                  <div class="col-sm-6" ng-repeat="column in columns">
+                    <label>{{column}}</label>
+                    <input type="text" name="{{column}}" id="{{column}}" class="form-control" placeholder="请输入{{column}}" ng-model="value" required >
+                  </div>
+                </div>
+            </div>
+            <footer class="panel-footer text-right bg-light lter" style="text-align: center">
+              <button type="submit" class="btn btn-success" ng-click="saveUser()">保存</button>
+              <button class="btn btn-warning" ng-click="closeThisDialog()">退出</button>
+            </footer>
+          </div>
+        </form>
+</div>
+
